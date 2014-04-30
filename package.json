@@ -1,0 +1,19 @@
+{
+  "name": "EuroStyle",
+  "version": "0.0.1",
+  "description": "Live voting on the alternative things in EuroVision 2014",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevematdavies/eurostyle"
+  },
+  "author": "stevematdavies@gmail.com",
+  "license": "---",
+  "bugs": {
+    "url": "https://github.com/stevematdavies/eurostyle/issues"
+  },
+  "homepage": "https://github.com/stevematdavies/eurostyle"
+}
