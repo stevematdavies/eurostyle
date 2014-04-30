@@ -2,6 +2,10 @@
 
 app.factory('DataService',['$firebase','FIREBASE_URI',function($firebase,FIREBASE_URI){
         var ref = new Firebase(FIREBASE_URI);
-        var data = $firebase(ref);
+        return {
+
+        }
+
+
 
 }]);

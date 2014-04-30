@@ -5,10 +5,11 @@
     <title>EuroStyle - alternative Eurovision voting</title>
     <link rel="stylesheet" href="components/foundation/css/normalize.css"/>
     <link rel="stylesheet" href="components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 
-    <div class="row" ng-controller="MainCtrl">
+    <div class="row" id="main" ng-controller="MainCtrl">
 
 
        <div class="row" ng-show="app.users.length > 0">
@@ -20,7 +21,7 @@
        </div>
 
 
-        <div class="panel">
+        <div class="panel radius round">
             <div class="row">
 
                 <div class="small-6 columns">
@@ -39,7 +40,7 @@
 
                 <div class="small-6 columns">
                     <label for="name">Your Country</label>
-                    <input type="text" id="country" ng-model="user.country" placeholder="country"/>
+                    <input type="text"  id="country" ng-model="user.country" placeholder="country"/>
                 </div>
 
                 <div class="small-6 columns">
@@ -52,7 +53,7 @@
 
         <div class="row">
             <div class="small-6 columns">
-                <button class="button" ng-click="app.newuser(user)">Save</button>
+                <button class="button " ng-click="newuser(user)">Save</button>
             </div>
         </div>
     </div>
