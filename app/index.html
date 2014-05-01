@@ -2,69 +2,21 @@
 <html lang="en" ng-app="EuroStyleApp">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EuroStyle - alternative Eurovision voting</title>
-    <link rel="stylesheet" href="components/foundation/css/normalize.css"/>
-    <link rel="stylesheet" href="components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 
-    <div class="row" id="main" ng-controller="MainCtrl">
-
-
-       <div class="row" ng-show="app.users.length > 0">
-           <ul class="no-bullet">
-               <li ng-repeat="user in app.users">
-                   {{user.name}} - {{user.country}}
-               </li>
-           </ul>
-       </div>
-
-
-        <div class="panel radius round">
-            <div class="row">
-
-                <div class="small-6 columns">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" ng-model="user.name" placeholder="name"/>
-                </div>
-
-                <div class="small-6 columns">
-                    <label for="name">Email</label>
-                    <input type="email" id="email" ng-model="user.email" placeholder="email"/>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="small-6 columns">
-                    <label for="name">Your Country</label>
-                    <input type="text"  id="country" ng-model="user.country" placeholder="country"/>
-                </div>
-
-                <div class="small-6 columns">
-                    <label for="winner">Country you would like to see win</label>
-                    <input type="email" id="winner" ng-model="user.winner" placeholder="winner?"/>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-6 columns">
-                <button class="button " ng-click="newuser(user)">Save</button>
-            </div>
-        </div>
+    <div class="container">
+        <ng-view></ng-view>
     </div>
 
 
 
-
-
-
-
     <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
@@ -74,7 +26,8 @@
 
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/_controller.main.js"></script>
+    <script src="scripts/controllers/_controller.voting.js"></script>
     <script src="scripts/services/_service.firebase.js"></script>
-    <script src="scripts/services/_service.user.js"></script>
+    <script src="scripts/directives/_directive.userinput.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 "use strict";
 
-app.controller('MainCtrl',function($scope,UserService,DataService){
+app.controller('MainCtrl',function($scope,DataService){
 
 });
