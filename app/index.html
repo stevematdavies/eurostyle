@@ -2,31 +2,31 @@
 <html lang="en" ng-app="EuroStyleApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EuroStyle - alternative Eurovision voting</title>
-    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="components/foundation-icons/foundation_icons_general/stylesheets/general_foundicons.css"/>
     <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 
-    <div class="container">
-        <ng-view></ng-view>
-    </div>
+
+     <ng-view></ng-view>
+
 
 
 
     <script src="components/jquery/dist/jquery.js"></script>
-    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="components/foundation/js/foundation.js"></script>
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
     <script src="components/firebase/firebase.js"></script>
+    <script src="components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="components/angularfire/angularfire.js"></script>
-    <script src="components/foundation/js/foundation.js"></script>
 
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/_controller.main.js"></script>
-    <script src="scripts/controllers/_controller.voting.js"></script>
+    <script src="scripts/controllers/_controller.launchpad.js"></script>
     <script src="scripts/services/_service.firebase.js"></script>
     <script src="scripts/directives/_directive.userinput.js"></script>
 </body>

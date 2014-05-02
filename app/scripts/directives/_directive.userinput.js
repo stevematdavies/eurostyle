@@ -2,6 +2,5 @@
 
 app.directive('userInput',function(){
     return {
-
     }
 });

@@ -12,9 +12,14 @@ var app = angular.module('EuroStyleApp',[
                 templateUrl: 'views/_view_main.html',
                 controller:  'MainCtrl'
         })
+            .when('/launchpad',{
+                templateUrl: '../views/_view_launchpad.html',
+                controller:  'LaunchpadCtrl'
+            })
+
             .when('/voting',{
                 templateUrl: 'views/_view_voting.html',
-                controller:  'VotingCtrl'
+                controller: 'VotingCtrl'
             });
     });
 
