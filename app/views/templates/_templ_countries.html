@@ -1,0 +1,4 @@
+<select ng-model="currentCountry" ng-options="entry.country as entry.country for entry in countries"
+        class="countrySelector" ng-change="startVotingFor(currentCountry)">
+    <option value="country"></option>
+</select>

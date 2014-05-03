@@ -3,7 +3,8 @@
 var app = angular.module('EuroStyleApp',[
     'ngResource',
     'ngRoute',
-    'firebase'
+    'firebase',
+    'ui.bootstrap'
 ]);
 
     app.config(function($routeProvider){
@@ -12,11 +13,6 @@ var app = angular.module('EuroStyleApp',[
                 templateUrl: 'views/_view_main.html',
                 controller:  'MainCtrl'
         })
-            .when('/launchpad',{
-                templateUrl: '../views/_view_launchpad.html',
-                controller:  'LaunchpadCtrl'
-            })
-
             .when('/voting',{
                 templateUrl: 'views/_view_voting.html',
                 controller: 'VotingCtrl'
@@ -24,3 +20,4 @@ var app = angular.module('EuroStyleApp',[
     });
 
 app.constant('FIREBASE_URI','https://data-eurostyle.firebaseio.com/');
+app.constant('FALLBACK_URI','ajax/fallback/data/');

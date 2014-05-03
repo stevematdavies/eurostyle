@@ -1,3 +1,29 @@
 <div class="row">
-    <h1>Voting....</h1>
+
+    <div class="text-left">
+        <p class="info_text">{{instructions}}</p>
+    </div>
+    <br/>
+
+    <div class="row" ng-show="!isVoting">
+        <h3 class="cooser">Choose the country you are voting for...</h3>
+        <countries-list></countries-list>
+        <br/>
+        <br/>
+    </div>
+
+    <div class="row" ng-show="isVoting">
+        <h3 class="chooser">Close and Choose another country...</h3>
+        <button class="btn btn-primary" ng-click="isVoting=false">Close</button>
+        <br/>
+        <div>
+            <h2>{{currentCountry}}</h2>
+            <p><strong>{{entryInfo.artist}}</strong>- <em>{{entryInfo.song}}</em></p>
+        </div>
+        <br/>
+    </div>
+
+    <div class="row">
+        <vote-categories ng-show="isVoting"></vote-categories>
+    </div>
 </div>

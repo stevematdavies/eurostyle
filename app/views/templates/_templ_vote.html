@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>[{{country}}]</h3>
+            <h4>{{vote.category}}</h4>
+            <p>{{vote.description}}</p>
+        </div>
+
+        <div class="col-lg-6">
+
+            <h4>Please Vote (0-5)</h4>
+            <p>
+
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=0> 0
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=1> 1
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=2> 2
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=3> 3
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=4> 4
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="vote.score" value=5> 5
+                </label>
+
+            </p>
+
+            <p>
+            <h6>Score:</h6> <span class="score">{{vote.score}}</span>
+            </p>
+
+
+            <p>
+            <h4>Comment?</h4>
+            <textarea cols="30" rows="10" ng-model="vote.comment"></textarea>
+            </p>
+
+            <p>
+                <button class="btn btn-ls btn-primary" ng-click="saveVote(vote)">Save This Vote</button>
+            </p>
+        </div>
+
+
+        </div>
+    </div>
+</div>

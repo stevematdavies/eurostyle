@@ -1,0 +1,7 @@
+<accordion>
+    <div ng-repeat="category in categories">
+        <accordion-group heading="{{category.name}}">
+            <vote-box cat="{{category.name}}" desc= "{{category.description}}" country="{{currentCountry}}" ></vote-box>
+        </accordion-group>
+    </div>
+</accordion>

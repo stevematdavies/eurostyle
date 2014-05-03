@@ -1,0 +1,89 @@
+{
+    "categories":
+    [
+        {
+            "name":"Pyrotechnics",
+            "description":"Fire,Explosions, Glitter Bombs etc."
+        },
+        {
+            "name":"Stage",
+            "description":"Cheesy, Wobbly props, colors relevance etc"
+        },
+        {
+            "name":"Costumes",
+            "description":"What the hell are they wearing?"
+        },
+        {
+            "name":"Sound",
+            "description":"Music, Loudness, Tone, Language"
+        },
+        {
+            "name":"Lighting",
+            "description":"The Bloody Sun, Need a torch, disco-disco etc"
+        },
+        {
+            "name":"SpecialFx",
+            "description":"Wow, SPace Aliens, Futuristic etc"
+        },
+        {
+            "name":"Choreography",
+            "description":"Bustin some moves there, Morris Dancing is better etc"
+        },
+        {
+             "name":"Leggings & Spandex",
+            "description":"Bananas or Lucky?"
+        },
+        {
+            "name":"Manly Women",
+            "description":"Hormone therapy?"
+        },
+        {
+            "name":"Womanly Men",
+            "description":"Needs more Protein in the diet"
+        },
+        {
+            "name":"Unbroken Voiceboxes",
+            "description":"The Church Choir is missing its highnotes"
+        },
+        {
+            "name":"Really Playing Instruments",
+            "description":"Hmm, so thats how you plat a guitar is it?"
+        },
+        {
+            "name":"Dubious Sexuality",
+            "description":"Sir or Madamme?"
+        },
+        {
+            "name":"Lip Syncing",
+            "description":"Kungfu-Movies?"
+        },
+        {
+            "name":"Euro Trash Factor",
+            "description":"Zetgeist, Ja unt uber koool"
+        },
+        {
+            "name":"WTF-Factor",
+            "description":"Brainfarts, double takes, and wasted minutes"
+        },
+        {
+            "name":"OMG-Factor",
+            "description":"Howzat, Bazinga, Eureka, total nice surprises!"
+        },
+        {
+            "name":"Too Kool for Skool",
+            "description":"Like Dawg, wot you doing up there, you could be a Supahstah!"
+        },
+        {
+            "name":"Believability",
+            "description":"As If!"
+        },
+        {
+            "name":"Cheese",
+            "description":"Eurovision typified, not even retro"
+        },
+        {
+            "name":"Overall Style",
+            "description":"MM, erm, aah, ooh well...."
+        }
+   ]
+}

@@ -2,10 +2,23 @@
 
 body {
     font-family: Comfortaa;
-    font-size:18pt;
-
+    background-color:#f7ffef;
 }
 
-#logo{
-    margin-top:175px;
+.info_text {
+    font-size: 18pt;
+    color:#0d3349;
+}
+.chooser {
+    font-size: 18pt;
+}
+
+.score {
+    font-size: 15pt;
+    color:#fff5ff;
+}
+
+.countrySelector {
+    height:50px;
+    font-size: 21pt;
 }
